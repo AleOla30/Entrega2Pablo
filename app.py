@@ -1,3 +1,5 @@
+pip install playsound
+
 from googletrans import Translator
 from gtts import gTTS
 import os
