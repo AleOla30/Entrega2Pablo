@@ -2,7 +2,7 @@ streamlit
  googletrans==4.0.0-rc1
  gTTS
 ipython
-
+pip install playsound
 Jinja2 >=2.9
 contourpy >=1
 numpy >=1.16
