@@ -13,16 +13,21 @@ frase_traducida = traduccion.text
 
 # Crea una instancia de gTTS para generar el audio
 def text_to_speech(text, tld):
-    
-    tts = gTTS(text,"es", tld, slow=False)
+
+    tts = gTTS(text, lang=tld, slow=False)
+
     try:
+
         my_file_name = text[0:20]
+
     except:
+
         my_file_name = "audio"
+
     tts.save(f"temp/{my_file_name}.mp3")
-    return my_file_name, text
-##tts = gTTS(text=frase_traducida, lang=idioma_destino)
-##tts.save("temp.wav")
+
+    return my_file_name, textt
+
 
 # Reproduce el archivo de audio usando playsound
 sound_file = "temp.wav"
